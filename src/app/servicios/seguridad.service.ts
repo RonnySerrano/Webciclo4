@@ -2,8 +2,6 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { BehaviorSubject, Observable } from 'rxjs';
 import { UsuarioModel } from '../modelos/usuario.model';
-import * as cryptoJS from 'crypto-js';
-
 
 @Injectable({
   providedIn: 'root'
