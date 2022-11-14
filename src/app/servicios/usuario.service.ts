@@ -19,10 +19,11 @@ export class UsuarioService {
 
     store(usuario: UsuarioModel): Observable<UsuarioModel> {
       return this.http.post<UsuarioModel>(`${this.url}/usuarios`, {
-        nombre: usuario.nombre,
-        apellidos: usuario.apellidos,
-        telefono: usuario.telefono,
-        correo: usuario.correo
+        Nombre: usuario.nombre,
+        Apellidos: usuario.apellidos,
+        Telefono: usuario.telefono,
+        Correo: usuario.correo,
+        Password:''
       });
     }
 
