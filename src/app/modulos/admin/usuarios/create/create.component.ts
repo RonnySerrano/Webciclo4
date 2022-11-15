@@ -28,7 +28,6 @@ export class CreateComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
   store(){
     let usuario = new UsuarioModel();
     usuario.nombre = this.fgValidacion.controls["nombre"].value as string;
@@ -42,8 +41,9 @@ export class CreateComponent implements OnInit {
     },
     (error: any) => {
       console.log(error)
-      alert("Error en el envio");
+      Swal.fire('¡Error!','', 'error')
     })
+  }
+  
 
-
-  }}
+  }
