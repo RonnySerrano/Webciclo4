@@ -18,7 +18,7 @@ export class AeropuertoService {
     }
 
     store(aeropuerto: AeropuertoModel): Observable<AeropuertoModel> {
-      return this.http.post<AeropuertoModel>(`${this.url}/Ruta`, {
+      return this.http.post<AeropuertoModel>(`${this.url}/aeropuerto`, {
         id: aeropuerto.id,
         nombre: aeropuerto.nombre,
         ciudad: aeropuerto.ciudad,

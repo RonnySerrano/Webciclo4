@@ -27,7 +27,7 @@ export class RutaService {
     }
 
     getAll(): Observable<RutaModel[]>{
-      return this.http.get<RutaModel[]>(`${this.url}/Ruta`, {
+      return this.http.get<RutaModel[]>(`${this.url}/ruta`, {
         // Le paso el token a la solicitud
         headers: new HttpHeaders({
           "Authorization": `Bearer ${this.token}`
